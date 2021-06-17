@@ -1,0 +1,220 @@
+Este es el segundo q le envio doctor, disculpe tuve un pequeño error con el primero
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExamenFinal</title>
+    <script type="text/javascript">
+        
+        alert("Tenga piedad Doctor :´( jsjs okno")
+
+        function pregunta1(){
+            s=prompt('Introduzca un numero:');
+            n = parseInt(s);
+            var num=0;
+            var total=0;
+            document.write("La Serie tiene "+n+" elementos<br/>")
+            for(i=1; i<=n; i++){
+              var fac=1;
+              document.write("+"+num+"! ")
+              for(j=1; j<=num; j++){
+                fac=fac*j;
+              }
+              num=num+2;
+              total=total+fac
+
+
+            }
+            
+            document.write(" La sumatoria de la serie es: "+total+"<br/>");
+            document.write("Actualice para continuar :´)");
+        }
+        function pregunta2(){
+            s=prompt('Introduzca un numero:');
+            n = parseInt(s);
+            var x = 2;
+            var c=0;
+            document.write("Se mostraran "+n+" numeros primos: <br/>")
+            while (c<n){
+                var cp=0;
+                for(i=1; i<=x; i++){
+                    if(x%i==0){
+                        cp=cp+1
+                    }
+                }
+                if(cp==2){
+                    c=c+1;
+                    document.write(x+"<br/>");
+
+                }
+                x=x+1
+            }
+            document.write("Actualice para continuar :´)");
+
+        }
+        function pregunta4(){
+            s=prompt('Introduzca un numero:');
+            n = parseInt(s);
+            var a =n;
+            var b =n; 
+            var nf=0;
+            var exp=0;
+            while(b>0){
+                b=parseInt(b/10)
+                exp=exp+1
+
+
+            }
+            exp=exp-1
+            while(a>0){
+                var x =a%10
+                nf=nf + x*(10**exp);
+                a=parseInt(a/10);
+                exp=exp-1
+
+            }
+            if(nf==n){
+                document.write("Es un numero capicua <br/>")
+                
+            }
+                else{
+                    document.write("No es un numero capicua <br/>") }
+            document.write("Actualice para continuar :´)");
+
+        }
+        function optativa(){
+            s=prompt('Introduzca un numero:');
+            n = parseInt(s);
+            for (i=1; i<=n; i++){
+                document.write(i+"! = ")
+                var fac=1;
+                for(j=1; j<=i; j++){
+                    fac=fac*j
+
+                }
+                document.write(fac+"<br/>")
+                
+            }
+            document.write("Actualice para continuar :´)");
+
+
+
+        }
+        function pregunta3(){
+            alert("No hice la calculadora Doctor disculpe :´(");
+
+        }
+        function pregunta5(){
+
+            alert("hice la optativa en vez de esta Doctor :¨3 ");
+
+        
+        }
+
+        
+
+    </script>
+</head>
+
+<body bgcolor=#C5CDCE >
+    <script>
+
+    </script>
+    <header>
+        <table align="center" width="100%" height="20%" border="1" cellspacing="0" bgcolor=#6BD5D7 cellspacing="0">
+            <tr>
+                <td align="center">
+                    <h1>
+                        <p>
+                            Examen Final de INF-113 JavaScript
+
+                        </p>
+                    </h1>
+
+                </td>
+            </tr>
+        </table>
+    </header>
+    <br>
+    <main>
+        <table width="100%" height=400 border="2" cellspacing="4" bgcolor=#6DE831>
+            <tr>
+                <td width="240">
+                    <nav>
+                        <ul>
+                            <h2>Preguntas</h2>
+                            <li>
+                                <input type="button" value="Pregunta 1 " onclick="pregunta1()">
+                            </li>
+                            <br>
+                            
+                            <li>
+                                <input type="button" value="Pregunta 2 " onclick="pregunta2()">
+
+                            </li>
+                            <br>
+                            <li>
+                                <input type="button" value="Pregunta 3 " onclick="pregunta3()">
+                            </li>
+                            <br>
+                            <li>
+                                <input type="button" value="Pregunta 4 " onclick="pregunta4()">
+
+                            </li>
+                            <br>
+                            <li>
+                                <input type="button" value="Pregunta 5 " onclick="pregunta5()">
+
+                            </li>
+                            <br>
+                            <li>
+                                <input type="button" value="Optativa " onclick="optativa()">
+
+      
+                            </li>
+                        </ul>
+                        
+                    </nav>
+                </td>
+
+                <td>
+                    <img src="meme.jpg" width="265" height="400" align="center"
+                    >
+                    <h3>Este es el segundo q le envio doctor, disculpe tuve un pequeño error con el primero</h3>
+    
+                </td>
+            </tr>
+
+            
+
+        </table>
+        
+
+        
+        
+
+    </main>
+    <br>
+
+    <footer>
+        <table align="boot" width="100%" height=85 border="2" cellspacing="0" bgcolor=#6BD5D7 >
+            <tr>
+                <th>
+                    <h3>
+                        Por Univ. Marco Antonio Caracila Ajhuacho
+                        <br>
+                        16/06/21
+                        
+                    </h3>
+                    
+                </th>
+            </tr>
+
+        </table>
+    </footer>
+</body>
+
+</html>
